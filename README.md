@@ -38,13 +38,11 @@ cd frontend_lg
 ``` 
 para entrar na pasta do frontend.
 
-- Com o node instalado, executar o comando: 
+- Com o node instalado, executar o seguinte comando na pasta "frontend_lg": 
 
 ```bash
 npm install
 ``` 
-
-na pasta "frontend_lg";
 
 - Depois que as dependências forem instaladas, executar o comando:
 
@@ -52,17 +50,13 @@ na pasta "frontend_lg";
 npm start
 ``` 
 
-para executar o frontend.
-
 Após isso o frontend já estará sendo executado, agora é preciso instalar o backend.
 
-- Abrir um prompt na raiz do projeto e executar o comando: 
+- Abrir um prompt na raiz do projeto e executar o seguinte comando para entrar na pasta do backend.: 
 
 ```bash
 cd frontend_lg
 ``` 
-
-para entrar na pasta do backend.
 
 - Com o docker instalado, executar o comando:
 
@@ -85,33 +79,27 @@ cd frontend_lg
 ``` 
 para entrar na pasta do frontend.
 
-- Com o node instalado, executar o comando: 
+- Com o node instalado, executar o seguinte comando na pasta "frontend_lg": 
 
 ```bash
 npm install
 ``` 
 
-na pasta "frontend_lg";
-
-- Depois que as dependências forem instaladas, executar o comando:
+- Depois que as dependências forem instaladas, executar o seguinte comando, para executar o frontend.:
 
 ```bash
 npm start
 ``` 
 
-para executar o frontend.
-
 Após isso o frontend já estará sendo executado, agora é preciso instalar o backend.
 
 - Abrir um prompt na raiz do projeto e executar o comando "cd backend_lg" para entrar na pasta do backend.
 
-- Com o python instalado, executar o comando: 
+- Com o python instalado, executar o seguinte comando, para instalar as dependências do python: 
 
 ```bash
 pip install -r requirements.txt
 ``` 
-
-para instalar as dependências do python
 
 - Abrir o arquivo app.py, ir na linha 9 e substituir os campos:
 
@@ -121,13 +109,11 @@ para instalar as dependências do python
 
 - Abrir o arquivo localizado no "backend_lg/scripts" chamado init.sql e executar o script no SGBD (Sistema Gerenciadador do Banco de Dados)
 
-- Após isso executar o comando:
+- Após isso executar o seguinte comando, na pasta "backend_lg", para executar o backend:
 
 ```bash
 python app.py
 ``` 
-
-na pasta "backend_lg", para executar o projeto
 
 - Após esse processo, abrir o google chrome no endereço "localhost:3000" ou no endereço indicado no prompt de comando do frontend.
 
