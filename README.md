@@ -1,5 +1,3 @@
-# Projeto Gerenciamento de Projetos LG
-
 <p align="center">
     <img src="https://i.imgur.com/rSyq3MW.png" alt="Documentção"></a>
 </p>
