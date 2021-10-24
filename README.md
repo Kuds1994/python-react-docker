@@ -60,7 +60,7 @@ Após isso o frontend já estará sendo executado, agora é preciso instalar o b
 pip install -r requirements.txt
 ``` 
 
-- Abrir o arquivo app.py, ir na linha 9 e substituir os campos:
+- Abrir o arquivo app.py localizado em "backend_lg", ir na linha 9 e substituir os campos:
 
 ```python
 "mysql+mysqlconnector://<usuario_do_banco>:<senha_do_usuario>@localhost/test"
