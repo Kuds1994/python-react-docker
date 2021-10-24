@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 services:
   app:
     build: ./
@@ -9,12 +9,12 @@ services:
     depends_on:
       - "db"
   db:
-    image: mysql
-    command: --init-file /var/lib/msql/init.sql
+    image: 'mysql'
+    restart: 'always'
     ports:
-      - "30000:3306"
+      - "30001:3306"
     environment:
-      MYSQL_ROOT_USER: root
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_ROOT_HOST: '%'
     volumes:
-      - ./init.sql:/var/lib/msql/init.sql
+      - './scripts:/docker-entrypoint-initdb.d'
