@@ -160,7 +160,7 @@ export default function Listar(){
                 </div>
                 : <h3>Nenhum projeto cadastrado.</h3>
             }
-            <Link to="/cadastrar" id="cadastrar-link" className="btn btn-primary">Cadastrar</Link>
+            <Link to="/cadastrar" id="cadastrar-link" className="btn btn-primary">Cadastrar Projeto</Link>
             <Link to="/cadastrarPessoa" id="cadastrar-link" className="btn btn-primary">Cadastrar Pessoa</Link>
 
             <Modal show={show} onHide={handleCloseExcluir}>
