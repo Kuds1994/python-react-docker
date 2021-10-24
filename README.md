@@ -20,6 +20,7 @@
 
 O projeto e divido em duas camadas: Frontend e Backend. Ambas passam por processos distintos de instalação.
 Para evitar a possível incompatibilidade entre os diversos tipos de tecnologias usadas no projeto, foi criado 2 formas para a instalação do backend.
+Nesta branch será descrito o método para a instalação sem o docker. Para seguir o 1° método, é preciso clonar a branch "master".
 
 ## Atenção
 
@@ -27,7 +28,7 @@ Para executar o projeto corretamente, e preciso instalar o node.js, mysql, docke
 Criar um virtual env para executar os comandos do python no método 2.
 Para a melhor reproduzação do projeto, abrir o frontend no google chrome.
 
-## 2º Instalação
+## Instalação
 
 ** O segundo método precisa que todas as tecnologias mencionadas acima estejam instaladas no computador
 
@@ -36,7 +37,6 @@ Para a melhor reproduzação do projeto, abrir o frontend no google chrome.
 ```bash
 cd frontend_lg
 ``` 
-
 
 - Com o node instalado, executar o seguinte comando na pasta "frontend_lg": 
 
