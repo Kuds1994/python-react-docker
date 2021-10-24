@@ -53,7 +53,7 @@ Após isso o frontend já estará sendo executado, agora é preciso instalar o b
 - Abrir um prompt na raiz do projeto e executar o seguinte comando para entrar na pasta do backend.: 
 
 ```bash
-cd frontend_lg
+cd backend_lg
 ``` 
 
 - Com o docker instalado, executar o comando:
@@ -65,6 +65,12 @@ docker-compose up
 - O processo irá demorar alguns minutos para instalar as ferramentas e dependências.
 
 - Após esse processo, abrir o google chrome no endereço "localhost:3000" ou no endereço indicado no prompt de comando do frontend.
+
+## O Sistema
+
+O sistema consta com 3 telas: listagem de projetos, cadastro de projetos e cadastro de pessoas.
+Para adicionar alguem no projeto, é preciso cadastrar uma pessoa primeiro.
+Na tela de projetos é possível listar, buscar por nome ou por id, excluir projetos, editar projetos, e simular o investimento no projeto.
 
 ## Agredecimentos
 
