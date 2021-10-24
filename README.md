@@ -2,7 +2,7 @@
     <img src="https://i.imgur.com/rSyq3MW.png" alt="Documentção"></a>
 </p>
 
-<h3 align="center">Gerenciador de Projetos</h3>
+<h3 align="center">Gerenciador de Projetos Lorem Ipsum Inc.</h3>
 
 <h4 align="center">O projeto tem como o objetivo fazer o gerenciamento dos projetos, seus custos, o valor do investimento e ect.</h4>
 
