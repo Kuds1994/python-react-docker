@@ -27,45 +27,7 @@ Para executar o projeto corretamente, e preciso instalar o node.js, mysql, docke
 Criar um virtual env para executar os comandos do python no método 2.
 Para a melhor reproduzação do projeto, abrir o frontend no google chrome.
 
-## 1º Método (Utilizando Docker)
-
-- Após clonar o repositório, abrir a pasta raiz do projeto, executar o seguinte comando no Prompt, para entrar na pasta do frontend:
-
-```bash
-cd frontend_lg
-``` 
-
-- Com o node instalado, executar o seguinte comando na pasta "frontend_lg": 
-
-```bash
-npm install
-``` 
-
-- Depois que as dependências forem instaladas, executar o comando:
-
-```bash
-npm start
-``` 
-
-Após isso o frontend já estará sendo executado, agora é preciso instalar o backend.
-
-- Abrir um prompt na raiz do projeto e executar o seguinte comando para entrar na pasta do backend.: 
-
-```bash
-cd frontend_lg
-``` 
-
-- Com o docker instalado, executar o comando:
-
-```bash
-docker-compose up
-``` 
-
-- O processo irá demorar alguns minutos para instalar as ferramentas e dependências.
-
-- Após esse processo, abrir o google chrome no endereço "localhost:3000" ou no endereço indicado no prompt de comando do frontend.
-
-## 2º Método
+## 2º Instalação
 
 ** O segundo método precisa que todas as tecnologias mencionadas acima estejam instaladas no computador
 
@@ -117,7 +79,3 @@ python app.py
 ## Agredecimentos
 
 Gostaria de agradecer a LG pela oportunidade e qualquer duvida sobre a execução do projeto ou instalação, estou a disposição para tentar resolver os problemas, sendo pelo email, telefone ou qualquer outro método de comunicação já fornecido anteriormente.
-
-
-
-    
