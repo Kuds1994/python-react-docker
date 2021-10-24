@@ -2,7 +2,7 @@
     <img src="https://i.imgur.com/rSyq3MW.png" alt="Documentção"></a>
 </p>
 
-<h3 align="center">Gerenciador de Projetos</h3>
+<h3 align="center">Gerenciador de Projetos Lorem Ipsum Inc.</h3>
 
 <h4 align="center">O projeto tem como o objetivo fazer o gerenciamento dos projetos, seus custos, o valor do investimento e ect.</h4>
 
@@ -60,7 +60,7 @@ Após isso o frontend já estará sendo executado, agora é preciso instalar o b
 pip install -r requirements.txt
 ``` 
 
-- Abrir o arquivo app.py, ir na linha 9 e substituir os campos:
+- Abrir o arquivo app.py localizado em "backend_lg", ir na linha 9 e substituir os campos:
 
 ```python
 "mysql+mysqlconnector://<usuario_do_banco>:<senha_do_usuario>@localhost/test"
@@ -75,6 +75,10 @@ python app.py
 ``` 
 
 - Após esse processo, abrir o google chrome no endereço "localhost:3000" ou no endereço indicado no prompt de comando do frontend.
+
+## O sistema
+
+O sistema consta com 3 telas: listagem de projetos, cadastro de projetos e cadastro de pessoas. Para adicionar alguem no projeto, é preciso cadastrar uma pessoa primeiro. Na tela de projetos é possível listar, buscar por nome ou por id, excluir projetos, editar projetos, e simular o investimento no projeto.
 
 ## Agredecimentos
 
