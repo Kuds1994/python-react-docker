@@ -106,7 +106,7 @@ pip install -r requirements.txt
 "mysql+mysqlconnector://<usuario_do_banco>:<senha_do_usuario>@localhost/test"
 ```
 
-- Abrir o arquivo localizado no "backend_lg/scripts" chamado init.sql e executar o script no SGBD (Sistema Gerenciadador do Banco de Dados)
+- Abrir o arquivo localizado na pasta "backend_lg/scripts" chamado "init.sql" e executar o script no SGBD (Sistema Gerenciadador do Banco de Dados)
 
 - Após isso executar o seguinte comando, na pasta "backend_lg", para executar o backend:
 
