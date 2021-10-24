@@ -105,15 +105,15 @@ def projetos():
 
         data = request.json
 
-
-
         agora = datetime.today()
 
         if agora < datetime.fromisoformat(data["data_termino"]):
             if datetime.fromisoformat(data["data_inicio"]) < datetime.fromisoformat(data["data_termino"]):
      
                 id = request.args['id']      
-                todo = Projeto.query.filter_by(id=id).first_or_404()            
+                todo = Projeto.query.filter_by(id=id).first_or_404()   
+
+                todo.pessoas = []         
             
                 if data.get('nome') is not None:
                     todo.nome = data["nome"]
