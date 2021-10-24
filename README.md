@@ -31,12 +31,11 @@ Para a melhor reproduzação do projeto, abrir o frontend no google chrome.
 
 ## 1º Método (Utilizando Docker)
 
-- Após clonar o repositório, abrir a pasta raiz do projeto, executar o comando no Prompt:
+- Após clonar o repositório, abrir a pasta raiz do projeto, executar o seguinte comando no Prompt, para entrar na pasta do frontend:
 
 ```bash
 cd frontend_lg
 ``` 
-para entrar na pasta do frontend.
 
 - Com o node instalado, executar o seguinte comando na pasta "frontend_lg": 
 
@@ -72,12 +71,12 @@ docker-compose up
 
 ** O segundo método precisa que todas as tecnologias mencionadas acima estejam instaladas no computador
 
-- Após clonar o repositório, abrir a pasta raiz do projeto, executar o comando no Prompt:
+- Após clonar o repositório, abrir a pasta raiz do projeto, executar o seuinte comando no Prompt, para entrar na pasta do frontend:
 
 ```bash
 cd frontend_lg
 ``` 
-para entrar na pasta do frontend.
+
 
 - Com o node instalado, executar o seguinte comando na pasta "frontend_lg": 
 
