@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 application = Flask(__name__)
 CORS(application)
-application.config['SQLALCHEMY_DATABASE_URI'] = "mysql+mysqlconnector://user:pass@localhost/test"
+application.config['SQLALCHEMY_DATABASE_URI'] = "mysql+mysqlconnector://root:senha1994@localhost/test"
 db = SQLAlchemy(application)
 
 pessoas = db.Table('pessoas',
@@ -105,16 +105,16 @@ def projetos():
 
         data = request.json
 
-
-
         agora = datetime.today()
 
         if agora < datetime.fromisoformat(data["data_termino"]):
             if datetime.fromisoformat(data["data_inicio"]) < datetime.fromisoformat(data["data_termino"]):
      
                 id = request.args['id']      
-                todo = Projeto.query.filter_by(id=id).first_or_404()            
-            
+                todo = Projeto.query.filter_by(id=id).first_or_404()
+
+                todo.pessoas = []
+                                   
                 if data.get('nome') is not None:
                     todo.nome = data["nome"]
                 else:
@@ -148,6 +148,8 @@ def projetos():
                 if data.get('participantes') is None:
                     resposta = {'mensagem': 'Campo de participantes precisa ser preenchido'}
                     return jsonify(resposta), 400 
+
+                
 
                 for pessoa in data["participantes"]:
                     todo.pessoas.append(Pessoa.query.filter_by(id=pessoa["id"]).first_or_404())      
