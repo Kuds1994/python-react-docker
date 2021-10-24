@@ -1,0 +1,47 @@
+.listar-todos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#cadastrar-link{
+    margin-top: 20px;
+}
+
+.sucesso{
+    color: green;
+}
+
+.falha{
+    color: red;
+}
+
+td, th{ 
+    vertical-align: middle;
+}
+
+.f{
+    margin-right: 10px;
+}
+
+.tabela{
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius:20px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 20px;
+  }
+

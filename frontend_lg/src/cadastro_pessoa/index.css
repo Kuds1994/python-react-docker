@@ -1,0 +1,20 @@
+.cadastro-pessoas{
+    display: flex;
+    flex-direction: column;  
+    align-content: center;
+}
+#label-date{
+    width: 100%;
+}
+
+#date{
+    width: 60%;
+    display: inline-block;
+}
+
+#time{
+    width: 20%;
+    display: inline-block;
+    margin-left: 10px;
+} 
+

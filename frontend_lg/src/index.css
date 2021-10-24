@@ -1,0 +1,32 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+}
+
+
+h2{
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+.form-group{
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-bottom: 10px;
+}
+
+.form-check{
+    margin-bottom: 20px;
+}
