@@ -76,6 +76,10 @@ python app.py
 
 - Após esse processo, abrir o google chrome no endereço "localhost:3000" ou no endereço indicado no prompt de comando do frontend.
 
+## O sistema
+
+O sistema consta com 3 telas: listagem de projetos, cadastro de projetos e cadastro de pessoas. Para adicionar alguem no projeto, é preciso cadastrar uma pessoa primeiro. Na tela de projetos é possível listar, buscar por nome ou por id, excluir projetos, editar projetos, e simular o investimento no projeto.
+
 ## Agredecimentos
 
 Gostaria de agradecer a LG pela oportunidade e qualquer duvida sobre a execução do projeto ou instalação, estou a disposição para tentar resolver os problemas, sendo pelo email, telefone ou qualquer outro método de comunicação já fornecido anteriormente.
