@@ -74,14 +74,22 @@ export default function Cadastrar(){
 
         a.participantes = participantes
 
-        await ProjetosDataServices.cadastrarProjeto(a).then(response => {
-            setMensagem({status: true, texto: "Salvo com sucesso", sucesso: true})
-        })
-        .catch((error)  => {
-            
-            setMensagem({status: true, texto: error.response.data.mensagem, sucesso: false})
+        if (participantes.length == 0) {
 
-        });   
+            setMensagem({status: true, texto: "É preciso selectionar alguns participantes", sucesso: false})
+
+        } else {
+
+            await ProjetosDataServices.cadastrarProjeto(a).then(response => {
+                setMensagem({status: true, texto: "Salvo com sucesso", sucesso: true})
+            })
+            .catch((error)  => {
+                
+                setMensagem({status: true, texto: error.response.data.mensagem, sucesso: false})
+
+            });     
+
+        } 
 
     }
 
@@ -128,7 +136,7 @@ export default function Cadastrar(){
                         }
                     </ul>
                 </div>   
-                <button id="cadastro-submit" className="btn btn-primary" type="submit">Cadastrar</button>
+                <button id="cadastro-submit" className="btn btn-primary" type="submit">Cadastrar Projeto</button>
                 <Link to="/" id="voltar-link" className="btn btn-light" href="/cadastrar">Voltar</Link>
                 { mensagem.status && mensagens() }
            </form>  
