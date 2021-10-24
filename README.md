@@ -24,7 +24,7 @@ Para evitar a possível incompatibilidade entre os diversos tipos de tecnologias
 ## Atenção
 
 Para executar o projeto corretamente, e preciso instalar o node.js, mysql, docker e python.
-Criar um virtual env para executar os comandos do python método 2.
+Criar um virtual env para executar os comandos do python no método 2.
 Para a melhor reproduzação do projeto, abrir o frontend no google chrome.
 
 ## 1º Método (Utilizando Docker)
