@@ -95,20 +95,30 @@ export default function Editar(){
          
     }, [id])  
     
-    const salvar = (e) => {
+    const salvar = async (e) => {
         e.preventDefault(); 
 
         const a = projeto
 
         a.participantes = participantes
 
-        ProjetosDataServices.atualizarProjeto(a.id, a).then(response => {
+        if(participantes.length == 0) {
+
+            setMensagem({status: true, texto: "É preciso selectionar alguns participantes", sucesso: false})
+
+        } else {
+
+            await ProjetosDataServices.atualizarProjeto(a.id, a).then(response => {
             
-            setMensagem({status: true, texto: "Atualizado com sucesso", sucesso: true})
-        }).catch(error  => {
-            console.log(error.response)
-            setMensagem({status: true, texto: error.response.data.mensagem, sucesso: false})
-        });    
+                setMensagem({status: true, texto: "Atualizado com sucesso", sucesso: true})
+            }).catch(error  => {
+                console.log(error.response)
+                setMensagem({status: true, texto: error.response.data.mensagem, sucesso: false})
+            });  
+
+        }
+
+          
     }
 
     return (
@@ -129,7 +139,11 @@ export default function Editar(){
                 </div> 
                 <div className="form-group"> 
                     <label htmlFor="projeto-risco">Risco</label> 
-                    <input id="projeto-risco" name="projeto-risco" onChange={e => setProjeto({...projeto, risco: e.target.value})} max="100" min="0" value={projeto.risco} className="form-control" type="number"/>
+                    <select className="form-control " onChange={e => setProjeto({...projeto, risco: e.target.value})} required>
+                        <option value="0">Baixo</option>
+                        <option value="1">Médio</option>
+                        <option value="2">Alto</option>
+                    </select>
                 </div>
                 <div className="form-group"> 
                     <label htmlFor="projeto-valor">Valor</label> 
