@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react"
 import {Link, useParams} from "react-router-dom";
+import CurrencyFormat from 'react-currency-format';
 
 import ProjetosDataServices from "../servicos/projeto.service";
 import PessoaDataServices from "../servicos/pessoa.servico"
@@ -132,7 +133,11 @@ export default function Editar(){
                 </div>
                 <div className="form-group"> 
                     <label htmlFor="projeto-valor">Valor</label> 
-                    <input id="projeto-valor" name="projeto-risco" onChange={e => setProjeto({...projeto, valor: e.target.value})} min="0" className="form-control" value={projeto.valor} type="number" step=".01"/>
+                    <CurrencyFormat className="form-control" id="projeto-valor" name="projeto-risco" required value={projeto.valor} min="0" max="9999999999" thousandSeparator={true} prefix={'R$'} onValueChange={(values) => {
+                        const {formattedValue, value} = values;
+    
+                        setProjeto({...projeto, valor: value})
+                    }}/>
                 </div>
                 <div className="form-group"> 
                     <label htmlFor="projeto-participantes">Selecione os participantes</label> 
