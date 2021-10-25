@@ -22,7 +22,7 @@ export default function Editar(){
         nome: '',
         data_inicio: '',
         data_termino:'',  
-        risco: '',
+        risco: 0,
         valor: '',
         participantes: []         
     })
@@ -137,7 +137,11 @@ export default function Editar(){
                 </div> 
                 <div className="form-group"> 
                     <label htmlFor="projeto-risco">Risco</label> 
-                    <input id="projeto-risco" name="projeto-risco" onChange={e => setProjeto({...projeto, risco: e.target.value})} max="100" min="0" value={projeto.risco} className="form-control" type="number"/>
+                    <select className="form-control" onChange={e => setProjeto({...projeto, risco: e.target.value})} required value={projeto.risco}>
+                        <option value={0} defaultValue>Baixo</option>
+                        <option value={1}>Médio</option>
+                        <option value={2}>Alto</option>
+                    </select>
                 </div>
                 <div className="form-group"> 
                     <label htmlFor="projeto-valor">Valor</label> 
