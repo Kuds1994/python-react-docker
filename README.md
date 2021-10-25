@@ -63,6 +63,8 @@ pip install -r requirements.txt
 - Abrir o arquivo app.py localizado em "backend_lg", ir na linha 9 e substituir os campos:
 
 ```python
+##<usuario_do_banco> = Usuario para acessar o banco
+##<senha_do_usuario> = Senha do usuario para acessar o banco
 "mysql+mysqlconnector://<usuario_do_banco>:<senha_do_usuario>@localhost/test"
 ```
 
