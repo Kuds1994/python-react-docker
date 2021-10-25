@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 application = Flask(__name__)
 CORS(application)
-application.config['SQLALCHEMY_DATABASE_URI'] = "mysql+mysqlconnector://root:senha1994@localhost/test"
+application.config['SQLALCHEMY_DATABASE_URI'] = "mysql+mysqlconnector://<usuario_do_banco>:<senha_do_usuario>@localhost/test"
 db = SQLAlchemy(application)
 
 pessoas = db.Table('pessoas',

@@ -95,20 +95,28 @@ export default function Editar(){
          
     }, [id])  
     
-    const salvar = (e) => {
+    const salvar = async (e) => {
         e.preventDefault(); 
 
         const a = projeto
 
         a.participantes = participantes
 
-        ProjetosDataServices.atualizarProjeto(a.id, a).then(response => {
+        if(participantes.length == 0) {
+
+            setMensagem({status: true, texto: "É preciso selectionar alguns participantes", sucesso: false})
+
+        } else {
+
+            await ProjetosDataServices.atualizarProjeto(a.id, a).then(response => {
             
-            setMensagem({status: true, texto: "Atualizado com sucesso", sucesso: true})
-        }).catch(error  => {
-            console.log(error.response)
-            setMensagem({status: true, texto: error.response.data.mensagem, sucesso: false})
-        });    
+                setMensagem({status: true, texto: "Atualizado com sucesso", sucesso: true})
+            }).catch(error  => {
+                console.log(error.response)
+                setMensagem({status: true, texto: error.response.data.mensagem, sucesso: false})
+            });  
+
+        } 
     }
 
     return (
