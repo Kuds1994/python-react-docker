@@ -86,4 +86,4 @@ Nesse endereço é possível:
 
 ## Agredecimentos
 
-Gostaria de agradecer a Eldorado pela oportunidade e qualquer dúvida sobre a execução do projeto ou instalação, estou a disposição para tentar resolver os problemas, sendo pelo email, telefone ou qualquer outro método de comunicação já fornecido anteriormente.
+Gostaria de agradecer a LG pela oportunidade e qualquer dúvida sobre a execução do projeto ou instalação, estou a disposição para tentar resolver os problemas, sendo pelo email, telefone ou qualquer outro método de comunicação já fornecido anteriormente.
