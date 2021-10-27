@@ -76,7 +76,7 @@ Após isso, os testes no frontend serão executados.
 ## Documentação
 
 O sistema também possui uma documentação do backend feita com o Swagger.
-É possivel acessar essa documentação entrando no endereço "http://localhost:3000/swagger/"
+É possivel acessar essa documentação entrando no endereço "http://localhost:5000/swagger/"
 
 Nesse endereço é possível:
 - Ver as APIs e seus endpoints.
